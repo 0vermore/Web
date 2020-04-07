@@ -1,0 +1,100 @@
+* {padding: 0; margin: 0}
+
+.container{
+  max-width: 1400px;
+  margin-left: 0px auto;
+  min-height: 100vh;
+}
+/*-------------------------------Grig settings------------------------*/
+.wrapper {
+  display: grid;
+  grid-template-columns: 15% 85%;
+  min-height: 100vh;
+}
+
+.wrapper > div{
+  padding: 1em;
+  text-indent: 20px;
+  vertical-align: top;
+  text-align: left;
+}
+/*-------------------------------Menu------------------------------*/
+.menu {
+  grid-row: 1/4;
+  background-color: #704190;
+}
+.menu:hover{
+  background: linear-gradient(to left, #7e46a3 , #7409ba);
+}
+/*-------------------------------Header------------------------------*/
+.header {
+  min-height: 80px;
+  background-color: #4a0085;
+  -webkit-transition: all 0.5s ease;;
+  -moz-transition: all 0.5s ease;;
+  -o-transition: all 0.5s ease;;
+  transition: all 0.5s ease;
+}
+.header:hover{
+box-shadow: inset 0 0 0 20px #59089a;
+}
+/*-------------------------------Content------------------------------*/
+.content {
+  min-height: 500px;
+  background-color: #b09bba;
+}
+.content:hover {
+  opacity: 0.8;
+}
+/*-------------------------------Footer------------------------------*/
+.footer {
+  min-height: 80px;
+  background-color: #44145e;
+  -webkit-transition: all 0.5s ease;;
+  -moz-transition: all 0.5s ease;;
+  -o-transition: all 0.5s ease;;
+  transition: all 0.5s ease;
+}
+.footer:hover{
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
+/*-------------------------------Requests------------------------------*/
+@media (max-width: 1400px){
+  .container{
+    max-width: 1170px;
+  }
+}
+
+@media (max-width: 1200px){
+  .container{
+    max-width: 970px;
+  }
+}
+
+@media (max-width: 992px){
+  .container{
+    max-width: 750px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px){
+  .container{
+    max-width: none;
+  }
+}
+
+/*--------------------Text settings-------------------------*/
+#letter {
+  color: rgb(51, 0, 55);
+  font-size: 150%;
+  font-family: serif;
+  position: relative;
+  top: 5px;
+}
+#text{
+  font-size: 100%
+  color: rgb(0, 0, 46);
+  margin-left: 10px;
+}
